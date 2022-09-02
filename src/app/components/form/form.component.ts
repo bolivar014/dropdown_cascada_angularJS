@@ -23,4 +23,7 @@ export class FormComponent implements OnInit {
     this.countries = this.dataSvc.getCountries();
   }
 
+  onSelect(id: number): void {
+    console.log('id->', id);
+  }
 }
