@@ -4,9 +4,15 @@ export interface CountryI {
     name: string;
 }
 
+export interface DepartamentI {
+    id: number;
+    countryId: number;
+    name: string;
+}
+
 // Interfaz Ciudad
 export interface CityI {
     id: number;
-    countryId: number;
+    departamentId: number;
     name: string;
 }
