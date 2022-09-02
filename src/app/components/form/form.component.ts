@@ -10,12 +10,17 @@ import { DataService } from 'src/app/service/data.service';
   providers: [DataService] // Inyección de propiedades
 })
 export class FormComponent implements OnInit {
+  // 
+  public selectedCountry: CountryI = {id: 0, name: '' };
+  public countries?: CountryI[];
+  public cities?: CityI[];
 
   constructor(private dataSvc: DataService) { }
 
   ngOnInit(): void {
-    console.log(this.dataSvc.getCountries());
-    console.log(this.dataSvc.getCities());
+    // console.log(this.dataSvc.getCountries());
+    // console.log(this.dataSvc.getCities());
+    this.countries = this.dataSvc.getCountries();
   }
 
 }
