@@ -6,8 +6,9 @@
     
 [*] Creación de Servicios
     ng g s services/data
-    
-[*] 
+
+[*] Compilar e iniciar servidor
+    ng serve
 
 [*] 
 
