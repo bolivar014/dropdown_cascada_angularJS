@@ -96,7 +96,7 @@ export class DataService {
       name: 'Medellín'
     }, {
       id: 12,
-      departamentId: 4,
+      departamentId: 4 ,
       name: 'Bogota'
     }
   ]

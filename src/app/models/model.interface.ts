@@ -4,6 +4,7 @@ export interface CountryI {
     name: string;
 }
 
+// Interfaz Departamento
 export interface DepartamentI {
     id: number;
     countryId: number;
