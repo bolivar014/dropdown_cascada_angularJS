@@ -9,7 +9,7 @@ export class DataService {
   private countries: CountryI[] = [
     {
       id: 1,
-      name: 'Brazil'
+      name: 'Brasil'
     }, {
       id: 2,
       name: 'España'
@@ -45,7 +45,19 @@ export class DataService {
       id: 4,
       countryId: 6,
       name: 'Cundinamarca',
-    }, 
+    }, {
+      id: 5,
+      countryId: 1,
+      name: 'Roraima'
+    }, {
+      id: 6,
+      countryId: 1,
+      name: "Amazonas"
+    }, {
+      id: 7,
+      countryId: 1,
+      name: "Acre"
+    }
   ]
 
   // Provider Cities
@@ -53,12 +65,12 @@ export class DataService {
     {
       id: 1,
       countryId: 1,
-      departamentId: 1,
+      departamentId: 6,
       name: 'Sao Paulo'
     }, {
       id: 2,
       countryId: 1,
-      departamentId: 1,
+      departamentId: 7,
       name: 'Brasilia'
     }, {
       id: 3,
