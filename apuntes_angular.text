@@ -4,8 +4,9 @@
 [*] Creación de componentes
     ng g c components/form
     
-[*] Creación de Interfaces
-
+[*] Creación de Servicios
+    ng g s services/data
+    
 [*] 
 
 [*] 
