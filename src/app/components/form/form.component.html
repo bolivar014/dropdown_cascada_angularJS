@@ -1,10 +1,10 @@
-<select name="" id="" [(ngModel)]="selectedCountry.id" (ngModelChange)="onSelectDepartament($event)" class="form-control">
+<select name="selCountry" id="selCountry" [(ngModel)]="selectedCountry.id" (ngModelChange)="onSelectDepartament($event)" class="form-control">
     <option *ngFor="let country of countries" value="{{country.id}}">{{country.name}}</option>
 </select>
 
 <br>
 
-<select name="" id="" class="form-control" [(ngModel)]="selectedDepartament.id" (ngModelChange)="onSelectCity($event)">
+<select name="selDepartament" id="selDepartament" class="form-control" [(ngModel)]="selectedDepartament.id" (ngModelChange)="onSelectCity($event)">
     <option *ngFor="let departament of departaments" value="{{departament.id}}">{{departament.name}}</option>
 </select>
 

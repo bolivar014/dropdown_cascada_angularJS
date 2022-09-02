@@ -14,6 +14,7 @@ export interface DepartamentI {
 // Interfaz Ciudad
 export interface CityI {
     id: number;
+    countryId: number;
     departamentId: number;
     name: string;
 }

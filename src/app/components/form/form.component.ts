@@ -17,24 +17,27 @@ export class FormComponent implements OnInit {
   public countries?: CountryI[];
   public departaments?: DepartamentI[];
   public cities?: CityI[];
+  public idCountry = 0;
 
   constructor(private dataSvc: DataService) { }
 
   ngOnInit(): void {
-    console.log(this.dataSvc.getCountries());
-    console.log(this.dataSvc.getDepartaments());
-    console.log(this.dataSvc.getCities());
+    // console.log(this.dataSvc.getCountries());
+    // console.log(this.dataSvc.getDepartaments());
+    // console.log(this.dataSvc.getCities());
     this.countries = this.dataSvc.getCountries();
     // this.departaments = this.dataSvc.getDepartaments();
   }
 
   onSelectDepartament(id: number): void {
-    console.log('id->', id);
+    // console.log('id->', id);
+    this.idCountry = id;
     this.departaments = this.dataSvc.getDepartaments().filter(item => item.countryId == id);
   }
 
   onSelectCity(id: number): void {
-    console.log('id ciudad->', id);
-    this.cities = this.dataSvc.getCities().filter(item => item.departamentId == id);
+    // console.log('id ciudad->', id);
+    // console.log('idCountry: ', this.idCountry);
+    this.cities = this.dataSvc.getCities().filter(item => item.departamentId == id ).filter(item => item.countryId == this.idCountry );
   }
 }

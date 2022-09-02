@@ -52,51 +52,63 @@ export class DataService {
   private cities: CityI[] = [
     {
       id: 1,
+      countryId: 1,
       departamentId: 1,
       name: 'Sao Paulo'
     }, {
       id: 2,
+      countryId: 1,
       departamentId: 1,
       name: 'Brasilia'
     }, {
       id: 3,
+      countryId: 2,
       departamentId: 2,
       name: 'Barcelona'
     }, {
       id: 4,
+      countryId: 2,
       departamentId: 2,
       name: 'Madrid'
     }, {
       id: 5,
+      countryId: 3,
       departamentId: 3,
       name: 'Lima'
     }, {
       id: 6,
+      countryId: 3,
       departamentId: 3,
       name: 'Trujillo'
     }, {
       id: 7,
+      countryId: 4,
       departamentId: 4,
       name: 'Buenos Aires'
     }, {
       id: 8,
+      countryId: 4,
       departamentId: 4,
       name: 'La Plata'
     }, {
       id: 9,
+      countryId: 4,
       departamentId: 5,
       name: 'La Romana'
     }, {
       id: 10,
+      countryId: 5,
       departamentId: 5,
       name: 'Santiago'
     }, {
       id: 11,
+      countryId: 6,
       departamentId: 1,
       name: 'Medellín'
     }, {
       id: 12,
-      departamentId: 4 ,
+      countryId: 6,
+      departamentId: 4,
       name: 'Bogota'
     }
   ]
