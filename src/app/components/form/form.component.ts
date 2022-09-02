@@ -24,6 +24,7 @@ export class FormComponent implements OnInit {
   }
 
   onSelect(id: number): void {
-    console.log('id->', id);
+    // console.log('id->', id);
+    this.cities = this.dataSvc.getCities().filter(item => item.countryId == id);
   }
 }
