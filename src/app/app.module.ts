@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
-
+// Importamos modulo del formulario
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,2 +1,3 @@
-<p>form works!</p>
-{{ countries | json }}
+<select name="" id="" [(ngModel)]="selectedCountry.id">
+    <option *ngFor="let country of countries" value="{{country.id}}">{{country.name}}</option>
+</select>
