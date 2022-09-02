@@ -14,6 +14,7 @@ export class FormComponent implements OnInit {
   // 
   public selectedCountry: CountryI = {id: 0, name: '' };
   public selectedDepartament: DepartamentI = {id: 0, countryId: 0, name: '' };
+  public selectedCities: CityI = {id: 0, countryId: 0, departamentId: 0, name: '' };
   public countries?: CountryI[];
   public departaments?: DepartamentI[];
   public cities?: CityI[];
@@ -33,6 +34,8 @@ export class FormComponent implements OnInit {
     // console.log('id->', id);
     this.idCountry = id;
     this.departaments = this.dataSvc.getDepartaments().filter(item => item.countryId == id);
+    this.cities = this.dataSvc.getCities().filter(item => item.departamentId == id ).filter(item => item.countryId == this.idCountry );
+  
   }
 
   onSelectCity(id: number): void {

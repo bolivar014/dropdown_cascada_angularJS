@@ -10,6 +10,6 @@
 
 <br>
 
-<select name="" id="" class="form-control">
+<select name="" id="" class="form-control" [(ngModel)]="selectedCities.id">
     <option *ngFor="let citie of cities" value="{{citie.id}}">{{citie.name}}</option>
 </select>
